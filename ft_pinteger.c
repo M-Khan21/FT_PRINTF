@@ -1,32 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_printf.c                                        :+:      :+:    :+:   */
+/*   ft_pinteger.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: makhan <makhan@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/05/26 16:24:31 by makhan            #+#    #+#             */
-/*   Updated: 2023/05/26 17:10:38 by makhan           ###   ########.fr       */
+/*   Created: 2023/05/08 14:11:46 by makhan            #+#    #+#             */
+/*   Updated: 2023/05/26 17:42:44 by makhan           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-//This is the function that checks the format, and converts and prints the specified conversions.
-//I would like to call it check_format_and_print but in short checkp.
-int checkp(const char c, void *args)
-{
-	int i;
+#include "ft_printf.h"
 
-	i = 0;
-	
+//Function to print ineger
+//ft_print_integer i.e ft_pinterger in short
+int	ft_pinteger(const char * str, ...)
+{
 	return 0;
-}
-
-
-int	ft_printf(const char * str, ...)
-{
-	va_start(args, str);
-
-	int i;
-	while (str[i])
-
 }

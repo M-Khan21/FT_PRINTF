@@ -1,18 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_print_integer.c                                 :+:      :+:    :+:   */
+/*   ft_ppointer.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: makhan <makhan@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/05/08 14:11:46 by makhan            #+#    #+#             */
-/*   Updated: 2023/05/25 22:11:08 by makhan           ###   ########.fr       */
+/*   Created: 2023/05/08 15:09:43 by makhan            #+#    #+#             */
+/*   Updated: 2023/05/26 17:44:00 by makhan           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-int	ft_print_integer(const char * str, ...)
+//Function to print pointer
+//ft_print_pointer i.e. ft_ppointer
+int	print_pointer()
 {
-	 
+
 }
+
+
