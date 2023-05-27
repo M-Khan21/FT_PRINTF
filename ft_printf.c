@@ -6,7 +6,7 @@
 /*   By: makhan <makhan@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/26 16:24:31 by makhan            #+#    #+#             */
-/*   Updated: 2023/05/26 20:21:09 by makhan           ###   ########.fr       */
+/*   Updated: 2023/05/26 20:29:32 by makhan           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -56,10 +56,11 @@ int	ft_printf(const char * str, ...)
 
 int main()
 {
-	ft_printf("Hello\n");
-	ft_printf("Hello%%\n");
-	ft_printf("Hello%c\n", 'a');
-	ft_printf("Hello%s\n", "Hello");
-	ft_printf("%%Hello%s%c\n", "Hello", 'a');
+	//ft_printf("Hello\n");
+	//ft_printf("Hello%%\n");
+	//ft_printf("Hello%c\n", 'a');
+	//ft_printf("Hello%s\n", "Hello");
+	//ft_printf("%%Hello%s%c\n", "Hello", 'a');
+	ft_printf("%s%c%c%c%c%c! Allah the %c and only!\n", "Subhan", 'A', 'L', 'L', 'A', 'H', '1');
 	return 0;
 }
