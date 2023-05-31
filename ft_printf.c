@@ -6,7 +6,7 @@
 /*   By: makhan <makhan@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/26 16:24:31 by makhan            #+#    #+#             */
-/*   Updated: 2023/05/26 20:29:32 by makhan           ###   ########.fr       */
+/*   Updated: 2023/05/31 00:43:20 by makhan           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,12 @@ int checkp(const char *c, void *arg)
 	if (*c == 'c')
 		ft_pchar((char)arg);
 	else if (*c == 's')
-		ft_pstring(arg);
+		ft_pstr(arg);
+	else if (*c == 'i')
+		ft_pint((int) arg);
+	else if (*c == 'd')
+		ft_pint((int) arg);
+	//else
 	return 0;
 }
 
@@ -61,6 +66,7 @@ int main()
 	//ft_printf("Hello%c\n", 'a');
 	//ft_printf("Hello%s\n", "Hello");
 	//ft_printf("%%Hello%s%c\n", "Hello", 'a');
-	ft_printf("%s%c%c%c%c%c! Allah the %c and only!\n", "Subhan", 'A', 'L', 'L', 'A', 'H', '1');
+	ft_printf("%s%c%c%c%c%c! Allah the %i and only!\n", "Subhan", 'A', 'L', 'L', 'A', 'H', 1);
+	ft_printf("%i\n", 23464);
 	return 0;
 }

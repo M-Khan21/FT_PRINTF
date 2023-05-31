@@ -1,41 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_pstring.c                                       :+:      :+:    :+:   */
+/*   ft_pptr.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: makhan <makhan@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/05/08 14:14:17 by makhan            #+#    #+#             */
-/*   Updated: 2023/05/26 17:44:36 by makhan           ###   ########.fr       */
+/*   Created: 2023/05/08 15:09:43 by makhan            #+#    #+#             */
+/*   Updated: 2023/05/31 00:06:38 by makhan           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-//Function to print string
-//ft_print-string i.e ft_pstring
-int	ft_pstring(char *str)
+//Function to print pointer
+//ft_print_pointer i.e. ft_pptr
+int	pptr()
 {
-	ft_putstr_fd(str, 1);
 	return 0;
 }
-
-
-/*int main ()
-{
-	char str[] = "Coding wala\n";
-
-	ft_print_string(str);
-	return 0;
-}*/
-//Habibi1
-
-
-
-
-
-
-
-
 
 
