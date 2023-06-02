@@ -6,7 +6,7 @@
 /*   By: makhan <makhan@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/08 12:55:00 by makhan            #+#    #+#             */
-/*   Updated: 2023/05/31 00:48:21 by makhan           ###   ########.fr       */
+/*   Updated: 2023/06/02 10:26:17 by makhan           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,5 +23,13 @@ int		ft_pchar(char c);
 int		ft_pstr(char *str);
 int		ft_ppercent();
 int		ft_pint(int c);
-int		ft_phex(int c, int ascii);
+int		ft_phex(unsigned int n, const char c);
+
+
+
+
+int	ft_hexlen(unsigned int n);
+void	ft_put_hex(unsigned int n, const char c);
+
+
 #endif

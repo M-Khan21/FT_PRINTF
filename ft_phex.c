@@ -6,16 +6,60 @@
 /*   By: makhan <makhan@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/31 00:46:30 by makhan            #+#    #+#             */
-/*   Updated: 2023/06/01 23:59:54 by makhan           ###   ########.fr       */
+/*   Updated: 2023/06/02 10:26:01 by makhan           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
 //Function to print number in Hexadecimal (base 16) format
-//ft_print_hexadecimal_format i.e ft_phex
-int ft_phex(int c, int ascii)
-{
 
-	return 0;
+//Function to calculate the length of hex
+int	ft_hexlen(unsigned int n)
+{
+	int	len;
+
+	len = 0;
+	while (n != 0)
+	{
+		len++;
+		n = n / 16;
+	}
+	return len;
+}
+
+//ft_print_hexadecimal_format i.e ft_phex
+int ft_phex(unsigned int n, const char c)
+{
+	if (n == 0)
+	{
+		int i;
+
+		i = write(1, "0", 1);
+		return (i);
+	}
+	else
+		ft_put_hex(n, c);
+	return (ft_hexlen(n));
+}
+
+void	ft_put_hex(unsigned int n, const char c)
+{
+	if (n >= 16)
+	{
+		ft_put_hex(n / 16, c);
+		ft_put_hex(n % 16, c);
+	}
+	else
+	{
+		if (n <= 9)
+			ft_putchar_fd((n + '0'), 1);
+		else
+		{
+			if (c == 'x')
+				ft_putchar_fd((n -10 + 'a'), 1);
+			if (c == 'X')
+				ft_putchar_fd((n - 10 + 'A'), 1);
+		}
+	}
 }

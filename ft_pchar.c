@@ -6,7 +6,7 @@
 /*   By: makhan <makhan@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/08 14:12:15 by makhan            #+#    #+#             */
-/*   Updated: 2023/05/26 20:07:25 by makhan           ###   ########.fr       */
+/*   Updated: 2023/06/02 08:42:02 by makhan           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@
 int	ft_pchar(char c)
 {
 	ft_putchar_fd(c, 1);
-	return 0;
+	return (1);
 }
 
 /*int main()
