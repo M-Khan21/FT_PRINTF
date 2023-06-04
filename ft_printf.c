@@ -6,7 +6,7 @@
 /*   By: makhan <makhan@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/26 16:24:31 by makhan            #+#    #+#             */
-/*   Updated: 2023/05/31 00:43:20 by makhan           ###   ########.fr       */
+/*   Updated: 2023/06/03 22:43:39 by makhan           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -70,3 +70,5 @@ int main()
 	ft_printf("%i\n", 23464);
 	return 0;
 }
+
+//just add the pointer InshaAllah
