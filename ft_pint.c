@@ -6,7 +6,7 @@
 /*   By: makhan <makhan@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/08 14:11:46 by makhan            #+#    #+#             */
-/*   Updated: 2023/06/02 09:20:40 by makhan           ###   ########.fr       */
+/*   Updated: 2023/06/06 18:05:41 by makhan           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,10 +14,10 @@
 
 //Function to print integer
 //ft_print_integer i.e ft_pint in short
-int ft_pint(int c)
+int	ft_pint(int c)
 {
 	unsigned int	i;
-	int	value;
+	int				value;
 
 	i = 1;
 	value = c;
@@ -28,7 +28,7 @@ int ft_pint(int c)
 		value = -value;
 		i++;
 	}
-	while (value > 9 )
+	while (value > 9)
 	{
 		value = value / 10;
 		i++;
@@ -36,8 +36,6 @@ int ft_pint(int c)
 	ft_putnbr_fd(c, 1);
 	return (i);
 }
-
-
 
 /*int main()
 {
@@ -48,6 +46,5 @@ int ft_pint(int c)
 	write(1,"\n", 2);
 	ft_pint(f);
 	write(1,"\n", 2);
-	return 0;
+	return (0);
 }*/
-

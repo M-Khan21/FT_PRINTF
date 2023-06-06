@@ -6,7 +6,7 @@
 /*   By: makhan <makhan@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/08 14:14:17 by makhan            #+#    #+#             */
-/*   Updated: 2023/06/02 09:13:44 by makhan           ###   ########.fr       */
+/*   Updated: 2023/06/06 18:07:24 by makhan           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,22 +30,11 @@ int	ft_pstr(char *str)
 	return (i);
 }
 
-
 /*int main ()
 {
 	char str[] = "Coding wala\n";
 
 	ft_print_string(str);
-	return 0;
+	return (0);
 }*/
 //Habibi1
-
-
-
-
-
-
-
-
-
-

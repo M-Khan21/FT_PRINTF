@@ -6,7 +6,7 @@
 /*   By: makhan <makhan@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/31 00:46:30 by makhan            #+#    #+#             */
-/*   Updated: 2023/06/02 10:26:01 by makhan           ###   ########.fr       */
+/*   Updated: 2023/06/06 18:08:37 by makhan           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,16 +25,16 @@ int	ft_hexlen(unsigned int n)
 		len++;
 		n = n / 16;
 	}
-	return len;
+	return (len);
 }
 
 //ft_print_hexadecimal_format i.e ft_phex
-int ft_phex(unsigned int n, const char c)
+int	ft_phex(unsigned int n, const char c)
 {
+	int	i;
+
 	if (n == 0)
 	{
-		int i;
-
 		i = write(1, "0", 1);
 		return (i);
 	}
@@ -57,7 +57,7 @@ void	ft_put_hex(unsigned int n, const char c)
 		else
 		{
 			if (c == 'x')
-				ft_putchar_fd((n -10 + 'a'), 1);
+				ft_putchar_fd((n - 10 + 'a'), 1);
 			if (c == 'X')
 				ft_putchar_fd((n - 10 + 'A'), 1);
 		}
