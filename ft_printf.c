@@ -6,7 +6,7 @@
 /*   By: makhan <makhan@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/26 16:24:31 by makhan            #+#    #+#             */
-/*   Updated: 2023/06/06 18:21:42 by makhan           ###   ########.fr       */
+/*   Updated: 2023/06/06 20:16:34 by makhan           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -54,15 +54,5 @@ int	ft_printf(const char *str, ...)
 		i++;
 	}
 	va_end(x);
-	return (0);
-}
-
-int	main(void)
-{
-	char	*str;
-
-	str = "Allah";
-	ft_printf("%s%s! Allah the %i and only!\n", "Subhan", str, 1);
-	ft_printf("%i\n", 23464);
 	return (0);
 }

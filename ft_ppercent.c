@@ -6,7 +6,7 @@
 /*   By: makhan <makhan@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/18 20:10:59 by makhan            #+#    #+#             */
-/*   Updated: 2023/06/06 18:06:04 by makhan           ###   ########.fr       */
+/*   Updated: 2023/06/06 20:16:12 by makhan           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,10 +22,3 @@ int	ft_ppercent(void)
 	write(1, &c, 1);
 	return (1);
 }
-
-/*int main()
-{
-	ft_ppercent();
-	return (0);
-}
-*/

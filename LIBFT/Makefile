@@ -6,12 +6,12 @@
 #    By: makhan <makhan@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/01/11 20:18:21 by makhan            #+#    #+#              #
-#    Updated: 2023/01/14 18:26:15 by makhan           ###   ########.fr        #
+#    Updated: 2023/06/06 19:52:11 by makhan           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = libft.a
-# CFLAGS = -Wall -Wextra -Werror
+CFLAGS = -Wall -Wextra -Werror
 CC = gcc
 
 SRC = ft_atoi.c ft_bzero.c ft_calloc.c ft_isalnum.c ft_isalpha.c ft_isascii.c ft_isdigit.c ft_isprint.c\

@@ -6,45 +6,53 @@
 /*   By: makhan <makhan@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/08 15:09:43 by makhan            #+#    #+#             */
-/*   Updated: 2023/06/06 19:01:23 by makhan           ###   ########.fr       */
+/*   Updated: 2023/06/06 20:20:32 by makhan           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-//Function to print pointer
+int	ft_ptr_len(uintptr_t num)
+{
+	int	len;
 
+	len = 0;
+	while (num != 0)
+	{
+		len++;
+		num = num / 16;
+	}
+	return (len);
+}
+
+void	ft_put_ptr(uintptr_t num)
+{
+	if (num >= 16)
+	{
+		ft_put_ptr(num / 16);
+		ft_put_ptr(num % 16);
+	}
+	else
+	{
+		if (num <= 9)
+			ft_putchar_fd((num + '0'), 1);
+		else
+			ft_putchar_fd((num - 10 + 'a'), 1);
+	}
+}
 //ft_print_pointer i.e. ft_pptr
-int	pptr(unsigned long long ptr)
+int	ft_pptr(unsigned long long ptr)
 {
 	int	i;
 
 	i = 0;
 	i += write(1, "0x", 2);
-
-	if (ptr == 0);
+	if (ptr == 0)
 		i += write(1, "0", 1);
-
 	else
 	{
 		ft_put_ptr(ptr);
 		i += ft_ptr_len(ptr);
 	}
+	return (i);
 }
-
-//int ft_ptrlen(unsigned long int )
-
-/*int main()
-{
-	int n = 45;
-	int *ptr_n = &n;
-	printf("%p\n", ptr_n);
-
-	char str[] = "Hello Habibi";
-	// Outputs error if you do it like this char *ptr = &str;
-	//printf("%p\n", str);
-
-	write(1, &n, 1);
-	write(1, "\n", 1);
-	return (0);
-}*/

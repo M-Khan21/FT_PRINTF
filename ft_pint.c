@@ -6,7 +6,7 @@
 /*   By: makhan <makhan@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/08 14:11:46 by makhan            #+#    #+#             */
-/*   Updated: 2023/06/06 18:05:41 by makhan           ###   ########.fr       */
+/*   Updated: 2023/06/06 20:16:03 by makhan           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,15 +36,3 @@ int	ft_pint(int c)
 	ft_putnbr_fd(c, 1);
 	return (i);
 }
-
-/*int main()
-{
-	int n = 45;
-	float f =-2147483648;
-
-	ft_pint(n);
-	write(1,"\n", 2);
-	ft_pint(f);
-	write(1,"\n", 2);
-	return (0);
-}*/
