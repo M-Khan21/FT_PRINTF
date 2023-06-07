@@ -6,7 +6,7 @@
 /*   By: makhan <makhan@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/26 16:24:31 by makhan            #+#    #+#             */
-/*   Updated: 2023/06/06 22:13:23 by makhan           ###   ########.fr       */
+/*   Updated: 2023/06/07 01:37:40 by makhan           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,6 +34,8 @@ static int	checkp(const char *c, void *arg)
 		i += ft_phex((unsigned int)arg, 55);
 	else if (*c == 'u')
 		i += print_unsigned((unsigned int)arg);
+	else if (*c == 'p')
+		i += ft_pptr((unsigned long long)arg);
 	return (i);
 }
 
