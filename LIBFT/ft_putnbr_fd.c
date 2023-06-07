@@ -6,11 +6,11 @@
 /*   By: makhan <makhan@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/11 18:20:04 by makhan            #+#    #+#             */
-/*   Updated: 2023/05/26 14:07:12 by makhan           ###   ########.fr       */
+/*   Updated: 2023/06/06 22:00:38 by makhan           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../ft_printf.h"
 
 void	ft_putnbr_fd(int n, int fd)
 {

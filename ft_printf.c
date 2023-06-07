@@ -6,7 +6,7 @@
 /*   By: makhan <makhan@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/26 16:24:31 by makhan            #+#    #+#             */
-/*   Updated: 2023/06/06 21:14:29 by makhan           ###   ########.fr       */
+/*   Updated: 2023/06/06 22:03:31 by makhan           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -50,12 +50,12 @@ int	ft_printf(const char *input, ...)
 		{
 			input++;
 			if (ft_strchr("cspdiuxX", *input))
-				i += check_type(input, va_arg(args, void *));
+				i += checkp(input, va_arg(args, void *));
 			else if (*input == '%')
-				i += print_char('%');
+				i += ft_pchar('%');
 		}
 		else
-			i = i + print_char(*input);
+			i = i + ft_pchar(*input);
 		input++;
 	}
 	va_end(args);

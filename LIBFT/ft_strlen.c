@@ -6,11 +6,11 @@
 /*   By: makhan <makhan@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/09 10:18:25 by makhan            #+#    #+#             */
-/*   Updated: 2023/01/14 19:54:10 by makhan           ###   ########.fr       */
+/*   Updated: 2023/06/06 22:00:41 by makhan           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../ft_printf.h"
 
 size_t	ft_strlen(const char *s)
 {
