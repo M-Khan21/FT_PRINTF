@@ -6,7 +6,7 @@
 /*   By: makhan <makhan@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/26 16:24:31 by makhan            #+#    #+#             */
-/*   Updated: 2023/06/06 20:16:34 by makhan           ###   ########.fr       */
+/*   Updated: 2023/06/06 21:14:29 by makhan           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,42 +17,47 @@
 //I would like to call it check_format_and_print but in short checkp.
 int	checkp(const char *c, void *arg)
 {
+	int	i;
+
+	i = 0;
 	if (*c == 'c')
-		ft_pchar((char)arg);
+		i += ft_pchar((int)arg);
 	else if (*c == 's')
-		ft_pstr(arg);
+		i += ft_pstr((char *)arg);
 	else if (*c == 'i')
-		ft_pint((int)arg);
+		i += ft_pint((int)arg);
 	else if (*c == 'd')
-		ft_pint((int)arg);
-	return (0);
+		i += ft_pint((int)arg);
+	else if (*c == 'x')
+		i += ft_phex((unsigned int)arg, 87);
+	else if (*c == 'X')
+		i += ft_phex((unsigned int)arg, 55);
+	else if (*c == 'u')
+		i += print_unsigned((unsigned int)arg);
+	return (i);
 }
 
-int	ft_printf(const char *str, ...)
+int	ft_printf(const char *input, ...)
 {
-	va_list	x;
-	int		i;
-	void	*value;
+	va_list			args;
+	unsigned int	i;
 
-	va_start(x, str);
 	i = 0;
-	while (str[i])
+	va_start(args, input);
+	while (*input != '\0')
 	{
-		if (str[i] == '%')
+		if (*input == '%')
 		{
-			i++;
-			if (ft_strchr("cspdiuxX", str[i]))
-			{
-				value = va_arg(x, void *);
-				checkp(&str[i], value);
-			}
-			if (str[i] == '%')
-				ft_ppercent();
+			input++;
+			if (ft_strchr("cspdiuxX", *input))
+				i += check_type(input, va_arg(args, void *));
+			else if (*input == '%')
+				i += print_char('%');
 		}
 		else
-			ft_pchar(str[i]);
-		i++;
+			i = i + print_char(*input);
+		input++;
 	}
-	va_end(x);
-	return (0);
+	va_end(args);
+	return (i);
 }
