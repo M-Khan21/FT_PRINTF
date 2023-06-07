@@ -6,7 +6,7 @@
 /*   By: makhan <makhan@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/08 15:09:43 by makhan            #+#    #+#             */
-/*   Updated: 2023/06/06 20:20:32 by makhan           ###   ########.fr       */
+/*   Updated: 2023/06/06 20:21:57 by makhan           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,7 +40,6 @@ void	ft_put_ptr(uintptr_t num)
 			ft_putchar_fd((num - 10 + 'a'), 1);
 	}
 }
-//ft_print_pointer i.e. ft_pptr
 int	ft_pptr(unsigned long long ptr)
 {
 	int	i;
