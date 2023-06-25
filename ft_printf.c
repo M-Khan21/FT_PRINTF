@@ -6,7 +6,7 @@
 /*   By: makhan <makhan@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/26 16:24:31 by makhan            #+#    #+#             */
-/*   Updated: 2023/06/07 01:37:40 by makhan           ###   ########.fr       */
+/*   Updated: 2023/06/25 13:59:48 by makhan           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,9 +29,9 @@ static int	checkp(const char *c, void *arg)
 	else if (*c == 'd')
 		i += ft_pint((int)arg);
 	else if (*c == 'x')
-		i += ft_phex((unsigned int)arg, 87);
+		i += ft_phex((unsigned int)arg, 120);
 	else if (*c == 'X')
-		i += ft_phex((unsigned int)arg, 55);
+		i += ft_phex((unsigned int)arg, 88);
 	else if (*c == 'u')
 		i += print_unsigned((unsigned int)arg);
 	else if (*c == 'p')

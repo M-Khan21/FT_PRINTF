@@ -6,7 +6,7 @@
 #    By: makhan <makhan@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/05/27 21:14:29 by makhan            #+#    #+#              #
-#    Updated: 2023/06/06 22:13:56 by makhan           ###   ########.fr        #
+#    Updated: 2023/06/25 14:16:37 by makhan           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -21,7 +21,7 @@ OBJS	= 	$(SRCS:.c=.o)
 all		: 	$(NAME)
 
 $(NAME)	: 	$(OBJS)
-			@ar -r $(NAME) $(OBJS)
+			@ar -rcs $(NAME) $(OBJS)
 
 clean	:
 			@rm -f $(OBJS)
